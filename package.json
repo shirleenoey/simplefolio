@@ -7,7 +7,9 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "gh-pages-build": "parcel build --public-url ."
+    "gh-pages-build": "parcel build --public-url .",
+    "predeploy": "rm -rf dist && parcel build ./*.html --public-url https://github.com/shirleenoey/simplefolio",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/cobidev/simplefolio/issues"
   },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "homepage": "https://github.com/shirleenoey/simplefolio",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
@@ -28,6 +30,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
+    "gh-pages": "^5.0.0",
     "jquery": "^3.6.1",
     "popper.js": "^1.16.1",
     "vanilla-tilt": "^1.7.3"
