@@ -8,7 +8,7 @@
     "start": "parcel",
     "build": "parcel build",
     "gh-pages-build": "parcel build --public-url .",
-    "predeploy": "rm -rf dist && parcel build ./*.html --public-url https://github.com/shirleenoey/simplefolio",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url https://github.com/shirleenoey/simplefolio",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/cobidev/simplefolio/issues"
   },
-  "homepage": "https://github.com/shirleenoey/simplefolio",
+  "homepage": "https://github.com/cobidev/simplefolio#about",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
